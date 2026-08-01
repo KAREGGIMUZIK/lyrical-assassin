@@ -73,7 +73,7 @@ subtitle_ja = "韻と言霊で時代を切り裂くMC達。"
 [[params.roster.artists]]
 name = "KOGEEMO"
 role = "FOUNDER / MC"
-bio_en = "Founder of Lyrical Assassin. Blending rugged sound-inspired Mafioso poetry with lethal social satire."
+bio_en = "This MC, the founder of Lyrical Assassin, emerges from the rugged lineage of 90s hip‑hop. Rooted in the era’s raw sound and steeped in Mafioso‑styled poetics, he forges a lyrical identity defined by weight, precision, and cultural insight. Through razor‑sharp social satire and an unwavering commitment to authenticity, he stands as the driving force at the core of the label’s creative vision."
 bio_ja = "Lyrical Assassin創始者。90年代直系SoundとMafioso詩情を、鋭利な社会風刺を融合させた独自の重厚リリックを展開するレーベルの核。"
 is_founder = true
 is_new = false
@@ -98,8 +98,8 @@ is_new = false
 name = "ADNE"
 full_name = "A Dezert Named Eagle"
 role = "MC / NEWEST SIGNING"
-bio_en = "Soaring like an eagle over the desert, targeting modern pathology with razor-sharp rhymes."
-bio_ja = "砂漠を舞う鷲の如く、上空から現代の病理を捕捉し撃ち落とす最新の刺客。研ぎ澄まされたライミングが武器。"
+bio_en = "This MC moves with the precision of an eagle sweeping across the desert, observing society’s pathologies with a bird’s‑eye clarity and striking at them like a rattlesnake’s natural predator. Yet behind that predatory insight lies a mind capable of cosmic philosophy — a thinker who bends time and space through his craft, transcending the limits of the present moment."
+bio_ja = "砂漠を舞う鷲の如く、鳥の眼で社会病理＝ガラガラ蛇を捕食する。その反面、宇宙的哲学を駆使して時空を超越するスキルを持つMC。"
 is_founder = false
 is_new = true
 
