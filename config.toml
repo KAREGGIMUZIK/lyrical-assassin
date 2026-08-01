@@ -36,14 +36,14 @@ tag_ja = "我らの核心思想"
 title_main_en = "THE MANIFESTO"
 title_main_ja = "声明 / マニフェスト"
 subtitle_en = "Words are not ornaments. They are sharp blades piercing structural flaws."
-subtitle_ja = "言葉は飾りではない。社会の構造欠陥を突く鋭利な刃だ。"
+subtitle_ja = "言葉は飾りではない。社会構造の欠陥を斬る鋭利な刃だ。"
 
 [[params.manifesto.pillars]]
 number = "01"
-title_en = "MAFIOSO POETRY"
-title_ja = "マフィオーソの詩情"
-desc_en = "Inheriting Wu-Tang aesthetics. Etching tension and depth over heavy, unyielding beats."
-desc_ja = "Wu-Tang Clanの血脈を継ぐ美学。重厚なビートの上に、緊張感と深み溢れる詩情を刻み込む。"
+title_en = "KEEP IT PRAGMATIC, STAY REAL 24/7"
+title_ja = "常に現実的。24時間365日、本物で在り続ける"
+desc_en = "The raw bloodline of 90s hip‑hop and the street knowledge that shaped its whole aesthetic. Heavy beats carrying that tense, deep, and razor‑sharp lyricism."
+desc_ja = "90年代HIPHOPの血脈とそのストリートの知恵が放つ美学。重厚なビートの上に、緊張感と深み溢れるリリシズムを刻み込む。"
 
 [[params.manifesto.pillars]]
 number = "02"
@@ -80,9 +80,9 @@ is_new = false
 
 [[params.roster.artists]]
 name = "Wildelux"
-role = "MC / BEATMAKER"
-bio_en = "Delivering raw street reality and borderless flow with gritty beats and heavy words."
-bio_ja = "ストリートのリアルと国境を越える独自のフロウを放つMC。粘り強いビートメイクと骨太な言葉で世界観を構築する。"
+role = "MC"
+bio_en = "This MC, born in the Bronx — the very birthplace of hip‑hop — stands as a living archive of the culture. His cool, measured perspective and inexhaustible intelligence continue to illuminate every chapter of his story."
+bio_ja = "HIPHOP生誕の地ブロンクス出身であり生き字引的な存在を誇るMC。クールな視点と無尽蔵なインテリジェンスが光る。"
 is_founder = false
 is_new = false
 
