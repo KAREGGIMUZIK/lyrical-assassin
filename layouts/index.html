@@ -18,10 +18,10 @@
     <div class="absolute inset-0 bg-[radial-gradient(#2c2d35_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#111215]/50 to-[#111215] pointer-events-none"></div>
 
-<!-- Header（コンクリート風CSSノイズ適用） -->
+<!-- Header（■アイコンの常時ホバー演出適用） -->
 <header class="relative z-10 max-w-7xl w-full mx-auto px-6 py-8 flex justify-between items-center border-b border-[#3b3e47] bg-[#1a1c22] bg-[radial-gradient(#2d313b_1px,transparent_1px)] [background-size:16px_16px] shadow-2xl">
   <div class="text-2xl font-black tracking-tighter uppercase text-white flex items-center gap-3">
-    <span class="w-3.5 h-3.5 bg-[#ccff00] rounded-none inline-block shadow-[0_0_12px_#ccff00]"></span>
+    <span class="w-3.5 h-3.5 bg-[#ccff00] rounded-none inline-block shadow-[0_0_15px_#ccff00] animate-pulse"></span>
     {{ .Site.Title }}
   </div>
   <nav class="hidden md:flex gap-8 text-xs tracking-widest font-mono uppercase text-[#94a3b8]">
@@ -53,12 +53,12 @@
         </span>
       </div>
 
-      <!-- Title（1行目タイピングエフェクト適用） -->
+      <!-- Title（カーソル高さを文字と同期） -->
       <div class="group cursor-pointer mb-8">
         <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight leading-[0.9] text-white">
           <div class="inline-flex items-center min-h-[1em]">
             <span id="typewriter"></span>
-            <span id="typewriter-cursor" class="inline-block w-[0.25em] h-[0.7em] bg-[#ccff00] ml-1 animate-pulse"></span>
+            <span id="typewriter-cursor" class="inline-block w-[0.22em] h-[0.88em] bg-[#ccff00] ml-1.5 animate-pulse"></span>
           </div>
           <br />
           <span class="text-[#ccff00] drop-shadow-[0_0_20px_rgba(204,255,0,0.35)]">{{ .Site.Params.hero.title_line2_en }}</span>
@@ -124,10 +124,10 @@
         </p>
       </div>
 
-      <!-- Pillars Grid -->
+      <!-- Pillars Grid（ホバー時によりダークな背景へ沈み込む演出） -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         {{ range .Site.Params.manifesto.pillars }}
-        <div class="bg-[#16181f] border border-[#2d2f36] p-8 relative group hover:border-[#ccff00] transition-all duration-300 cursor-pointer">
+        <div class="bg-[#16181f] border border-[#2d2f36] p-8 relative group hover:bg-[#0a0b0e] hover:border-[#ccff00] transition-all duration-300 cursor-pointer">
           <div class="text-5xl font-mono font-black text-[#262933] group-hover:text-[#ccff00]/20 transition-colors mb-6">
             {{ .number }}
           </div>
@@ -177,10 +177,10 @@
         </p>
       </div>
 
-      <!-- アーティスト一覧グリッド -->
+      <!-- アーティスト一覧グリッド（ホバー時暗度調整） -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {{ range .Site.Params.roster.artists }}
-        <div class="bg-[#16181f] border border-[#2d2f36] p-8 relative group hover:border-[#ccff00] transition-all duration-300 flex flex-col justify-between cursor-pointer">
+        <div class="bg-[#16181f] border border-[#2d2f36] p-8 relative group hover:bg-[#0a0b0e] hover:border-[#ccff00] transition-all duration-300 flex flex-col justify-between cursor-pointer">
           <div>
             <div class="flex justify-between items-start mb-6 font-mono text-xs">
               <span class="px-2 py-1 bg-[#222530] text-[#94a3b8] border border-[#333742] group-hover:border-[#ccff00]/40 group-hover:text-[#ccff00] transition-colors">
@@ -255,7 +255,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <div class="bg-[#16181f] border border-[#2d2f36] p-8 flex flex-col justify-between group cursor-pointer">
+        <div class="bg-[#16181f] border border-[#2d2f36] p-8 flex flex-col justify-between group hover:bg-[#0a0b0e] hover:border-[#3b3f4d] transition-all duration-300 cursor-pointer">
           <div>
             <div class="text-xs font-mono text-[#ccff00] uppercase tracking-widest mb-4">
               {{ .Site.Params.contact.email_label }}
@@ -276,7 +276,7 @@
           </a>
         </div>
 
-        <div class="bg-[#16181f] border border-[#2d2f36] p-8 flex flex-col justify-between group cursor-pointer">
+        <div class="bg-[#16181f] border border-[#2d2f36] p-8 flex flex-col justify-between group hover:bg-[#0a0b0e] hover:border-[#3b3f4d] transition-all duration-300 cursor-pointer">
           <div>
             <div class="text-xs font-mono text-[#ccff00] uppercase tracking-widest mb-4">
               {{ .Site.Params.contact.demo_title }}
@@ -302,12 +302,12 @@
   </section>
 
 
-<!-- Footer（コンクリート風グラデーション適用） -->
+<!-- Footer（■アイコンの常時ホバー演出適用） -->
 <footer class="bg-gradient-to-b from-[#181a20] to-[#0f1013] text-[#64748b] py-12 border-t border-b border-[#333742] relative overflow-hidden">
   <div class="absolute inset-0 bg-[radial-gradient(#2d313b_1px,transparent_1px)] [background-size:12px_12px] opacity-30 pointer-events-none"></div>
   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 relative z-10">
     <div class="flex items-center gap-3">
-      <span class="w-3 h-3 bg-[#ccff00] rounded-none inline-block"></span>
+      <span class="w-3 h-3 bg-[#ccff00] rounded-none inline-block shadow-[0_0_12px_#ccff00] animate-pulse"></span>
       <span class="text-lg font-black tracking-tighter text-white uppercase">{{ .Site.Title }}</span>
       <span class="text-xs font-mono text-[#474d5c] hidden sm:inline">| {{ .Site.Params.footer.tagline }}</span>
     </div>
@@ -345,10 +345,10 @@
       if (i < text.length) {
         target.textContent += text.charAt(i);
         i++;
-        setTimeout(typeWriter, 75); // 打鍵速度（ミリ秒）
+        setTimeout(typeWriter, 75);
       }
     }
-    setTimeout(typeWriter, 400); // ページ表示から開始までの待機時間
+    setTimeout(typeWriter, 400);
   });
 </script>
 
