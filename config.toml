@@ -1,0 +1,124 @@
+baseURL = 'https://lyrical-assassin.pages.dev/'
+locale = 'en-us'
+title = 'LYRICAL ASSASSIN'
+
+# -----------------------------------------------------------------
+# 1. HERO SECTION
+# -----------------------------------------------------------------
+[params.hero]
+badge_en = "RAW RHYMES × SOCIAL CRITIQUE"
+badge_ja = "生の韻 × 剥き出しの社会風刺"
+title_line1_en = "LYRICS AS THA WEAPON."
+title_line1_ja = "言葉を、武器として。"
+title_line2_en = "SATIRE AS THA BLADE."
+title_line2_ja = "風刺を、鋭利な刃として。"
+statement_en = "Inheriting the rugged sound legacy: heavy poetry meets lethal critique at the intersection of street aesthetics and Mafioso poise."
+statement_ja = "Rugged Soundの血脈を継ぐ重厚な詩情と社会を穿つ鋭利な風刺。ストリートの美学とMafioso的審美眼の交差地。"
+btn_primary_en = "LATEST DROPS"
+btn_primary_ja = "最新作品を見る"
+btn_primary_link = "#releases"
+btn_secondary_en = "READ MANIFESTO"
+btn_secondary_ja = "思想・声明を読む"
+btn_secondary_link = "#manifesto"
+
+[params.now_drop]
+tag = "NOW DROP"
+track_title = 'LYRICAL ASSASSIN - "REALITY SATIRE" (RAW CUT)'
+status_en = "STREAMING ON ALL PLATFORMS"
+status_ja = "全プラットフォームで配信中"
+
+# -----------------------------------------------------------------
+# 2. MANIFESTO SECTION
+# -----------------------------------------------------------------
+[params.manifesto]
+tag_en = "OUR PHILOSOPHY"
+tag_ja = "我らの核心思想"
+title_main_en = "THE MANIFESTO"
+title_main_ja = "声明 / マニフェスト"
+subtitle_en = "Words are not ornaments. They are sharp blades piercing structural flaws."
+subtitle_ja = "言葉は飾りではない。社会の構造欠陥を突く鋭利な刃だ。"
+
+[[params.manifesto.pillars]]
+number = "01"
+title_en = "MAFIOSO POETRY"
+title_ja = "マフィオーソの詩情"
+desc_en = "Inheriting Wu-Tang aesthetics. Etching tension and depth over heavy, unyielding beats."
+desc_ja = "Wu-Tang Clanの血脈を継ぐ美学。重厚なビートの上に、緊張感と深み溢れる詩情を刻み込む。"
+
+[[params.manifesto.pillars]]
+number = "02"
+title_en = "SOCIAL SATIRE"
+title_ja = "鋭利な社会風刺"
+desc_en = "Beyond self-expression. Slicing through societal defects, media deceptions, and modern pathology."
+desc_ja = "単なる自己主張に留まらない。歪んだ社会構造、メディアの欺瞞、現代の病理を言葉で切り裂く。"
+
+[[params.manifesto.pillars]]
+number = "03"
+title_en = "LYRICAL ASSASSIN"
+title_ja = "リリックの刺客"
+desc_en = "Stripping away shallow trends. Piercing thoughts with lethal rhymes and uncompromising vision."
+desc_ja = "表層的なトレンドを切り捨て、鋭利なリリックだけで思考を穿つ言葉の暗殺者。"
+
+# -----------------------------------------------------------------
+# 3. ROSTER SECTION
+# -----------------------------------------------------------------
+[params.roster]
+tag_en = "ARTIST ROSTER"
+tag_ja = "所属アーティスト"
+title_main_en = "THE ASSASSINS"
+title_main_ja = "言葉の刺客たち"
+subtitle_en = "The main line-up of Lyrical Assassin, slicing through the era with rhymes and soul."
+subtitle_ja = "言葉と言霊で時代を切り裂く、Lyrical Assassin所属のメインラインナップ。"
+
+[[params.roster.artists]]
+name = "KOGEEMO"
+role = "FOUNDER / MAIN LYRICIST"
+bio_en = "Founder of Lyrical Assassin. Blending Wu-Tang-inspired Mafioso poetry with lethal social satire."
+bio_ja = "Lyrical Assassin創始者。90年代直系SoundとMafioso詩情を、鋭利な社会風刺を融合させた独自の重厚リリックを展開するレーベルの核。"
+is_founder = true
+is_new = false
+
+[[params.roster.artists]]
+name = "Wildelux"
+role = "MC / BEATMAKER"
+bio_en = "Delivering raw street reality and borderless flow with gritty beats and heavy words."
+bio_ja = "ストリートのリアルと国境を越える独自のフロウを放つMC。粘り強いビートメイクと骨太な言葉で世界観を構築する。"
+is_founder = false
+is_new = false
+
+[[params.roster.artists]]
+name = "Majesty"
+role = "MC / PRODUCER"
+bio_en = "Commanding presence with dignified lyrics and dark, aesthetically rich soundscapes."
+bio_ja = "威厳溢れる言葉選びと重厚な空気感を纏うプロデューサー兼MC。ダークかつ美学に満ちたトラックで音像を底上げする。"
+is_founder = false
+is_new = false
+
+[[params.roster.artists]]
+name = "ADNE"
+full_name = "A Dezert Named Eagle"
+role = "MC / NEWEST SIGNING"
+bio_en = "Soaring like an eagle over the desert, targeting modern pathology with razor-sharp rhymes."
+bio_ja = "砂漠を舞う鷲の如く、上空から現代の病理を捕捉し撃ち落とす最新の刺客。研ぎ澄まされたライミングが武器。"
+is_founder = false
+is_new = true
+
+# -----------------------------------------------------------------
+# 4. CONTACT & FOOTER
+# -----------------------------------------------------------------
+[params.contact]
+tag_en = "GET IN TOUCH"
+tag_ja = "お問い合わせ"
+title_main_en = "JOIN THE ALLIANCE"
+title_main_ja = "同盟・連携・打診"
+subtitle_en = "For demo submissions, bookings, press inquiries, and strategic collaborations."
+subtitle_ja = "デモトラックの送付、ブッキング、メディア取材、コラボレーションの打診はこちらから。"
+demo_title = "DEMO SUBMISSION POLICY"
+demo_note_en = "* Streaming links only (SoundCloud / Dropbox). Direct file attachments will be purged."
+demo_note_ja = "※ストリーミングリンク（SoundCloud/Dropbox等）を本文に記載のこと。直接添付は自動破棄。"
+email_label = "OFFICIAL INQUIRY"
+email_address = "contact@lyrical-assassin.com"
+
+[params.footer]
+tagline = "RAW RHYMES × SOCIAL SATIRE"
+copyright = "© 2026 LYRICAL ASSASSIN. ALL RIGHTS RESERVED."
