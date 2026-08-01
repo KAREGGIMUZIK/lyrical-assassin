@@ -65,15 +65,15 @@ desc_ja = "表層的なトレンドを切り捨て、鋭利なリリックだけ
 [params.roster]
 tag_en = "ARTIST ROSTER"
 tag_ja = "所属アーティスト"
-title_main_en = "THE ASSASSINS"
-title_main_ja = "言葉の刺客たち"
+title_main_en = "THA LYRICAL ASSASSINS"
+title_main_ja = "韻と言葉の刺客たち"
 subtitle_en = "The main line-up of Lyrical Assassin, slicing through the era with rhymes and soul."
-subtitle_ja = "言葉と言霊で時代を切り裂く、Lyrical Assassin所属のメインラインナップ。"
+subtitle_ja = "韻と言霊で時代を切り裂くMC達。"
 
 [[params.roster.artists]]
 name = "KOGEEMO"
-role = "FOUNDER / MAIN LYRICIST"
-bio_en = "Founder of Lyrical Assassin. Blending Wu-Tang-inspired Mafioso poetry with lethal social satire."
+role = "FOUNDER / MC"
+bio_en = "Founder of Lyrical Assassin. Blending rugged sound-inspired Mafioso poetry with lethal social satire."
 bio_ja = "Lyrical Assassin創始者。90年代直系SoundとMafioso詩情を、鋭利な社会風刺を融合させた独自の重厚リリックを展開するレーベルの核。"
 is_founder = true
 is_new = false
