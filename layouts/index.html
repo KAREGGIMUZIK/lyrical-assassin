@@ -1,12 +1,18 @@
-<!-- =================================================================
-     LYRICAL ASSASSIN - Main Index Template
-     Path: layouts/index.html
-================================================================== -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }}</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#111215] text-[#e2e8f0] antialiased selection:bg-[#ccff00] selection:text-black">
 
-<main class="bg-[#111215] text-[#e2e8f0] min-h-screen selection:bg-[#ccff00] selection:text-black">
+<main class="min-h-screen">
 
   <!-- ===============================================================
-       1. HERO SECTION (ファーストビュー / ヒーロー)
+       1. HERO SECTION (ファーストビュー)
   ================================================================== -->
   <section id="hero" class="relative min-h-screen flex flex-col justify-between overflow-hidden border-b border-[#2d2f36]">
     <div class="absolute inset-0 bg-[radial-gradient(#2c2d35_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none"></div>
@@ -20,7 +26,6 @@
       <nav class="hidden md:flex gap-8 text-xs tracking-widest font-mono uppercase text-[#94a3b8]">
         <a href="#manifesto" class="hover:text-[#ccff00] transition-colors">Manifesto</a>
         <a href="#roster" class="hover:text-[#ccff00] transition-colors">Roster</a>
-        <a href="#releases" class="hover:text-[#ccff00] transition-colors">Releases</a>
         <a href="#contact" class="hover:text-[#ccff00] transition-colors">Contact</a>
       </nav>
     </header>
@@ -50,7 +55,7 @@
 
 
   <!-- ===============================================================
-       2. MANIFESTO SECTION (レーベルの思想・マニフェスト)
+       2. MANIFESTO SECTION (レーベル思想)
   ================================================================== -->
   <section id="manifesto" class="relative bg-[#0d0e11] text-[#e2e8f0] py-24 border-b border-[#2d2f36] overflow-hidden">
     <div class="absolute top-0 right-0 w-96 h-96 bg-[#ccff00]/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -91,8 +96,6 @@
   ================================================================== -->
   <section id="roster" class="relative bg-[#111215] text-[#e2e8f0] py-24 border-b border-[#2d2f36]">
     <div class="max-w-7xl mx-auto px-6 relative z-10">
-      
-      <!-- セクションヘッダー -->
       <div class="mb-16 border-l-4 border-[#ccff00] pl-6">
         <div class="text-[#ccff00] font-mono text-xs uppercase tracking-widest mb-2">
           ● {{ .Site.Params.roster.tag }}
@@ -105,12 +108,10 @@
         </p>
       </div>
 
-      <!-- アーティストグリッド (2x2) -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {{ range .Site.Params.roster.artists }}
         <div class="bg-[#16181f] border border-[#2d2f36] p-8 relative group hover:border-[#ccff00] transition-all duration-300 flex flex-col justify-between">
           <div>
-            <!-- バッジ / ロール情報 -->
             <div class="flex justify-between items-start mb-6 font-mono text-xs">
               <span class="px-2 py-1 bg-[#222530] text-[#94a3b8] border border-[#333742] group-hover:border-[#ccff00]/40 group-hover:text-[#ccff00] transition-colors">
                 {{ .role }}
@@ -125,8 +126,6 @@
               </span>
               {{ end }}
             </div>
-
-            <!-- アーティスト名 -->
             <h3 class="text-3xl font-black uppercase text-white tracking-wider mb-1 group-hover:text-[#ccff00] transition-colors">
               {{ .name }}
             </h3>
@@ -137,28 +136,97 @@
             {{ else }}
             <div class="mb-4"></div>
             {{ end }}
-
-            <!-- Bio -->
             <p class="text-sm text-[#94a3b8] leading-relaxed mb-6">
               {{ .bio }}
             </p>
           </div>
-
-          <!-- アクションリンク -->
-          <div class="pt-4 border-t border-[#24262d] flex justify-between items-center text-xs font-mono">
+          <div class="pt-[#1a1c23] border-t border-[#24262d] flex justify-between items-center text-xs font-mono">
             <span class="text-[#64748b] group-hover:text-white transition-colors">DISCOGRAPHY & PROFILE</span>
             <span class="text-[#ccff00] group-hover:translate-x-1 transition-transform">→</span>
           </div>
         </div>
         {{ end }}
       </div>
-
     </div>
   </section>
 
 
   <!-- ===============================================================
-       4. STICKY PLAYER BAR (画面下部常駐 プレイヤーバー)
+       4. CONTACT SECTION (お問い合わせ)
+  ================================================================== -->
+  <section id="contact" class="relative bg-[#0d0e11] text-[#e2e8f0] py-24 border-b border-[#2d2f36]">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="mb-16 border-l-4 border-[#ccff00] pl-6">
+        <div class="text-[#ccff00] font-mono text-xs uppercase tracking-widest mb-2">
+          ● {{ .Site.Params.contact.tag }}
+        </div>
+        <h2 class="text-4xl sm:text-6xl font-black uppercase tracking-tight text-white">
+          {{ .Site.Params.contact.title_prefix }} <span class="text-[#ccff00]">{{ .Site.Params.contact.title_main }}</span>
+        </h2>
+        <p class="text-lg text-[#94a3b8] font-light mt-3 max-w-xl">
+          {{ .Site.Params.contact.subtitle }}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-[#16181f] border border-[#2d2f36] p-8 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-mono text-[#ccff00] uppercase tracking-widest mb-4">
+              {{ .Site.Params.contact.email_label }}
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">
+              DIRECT CONTACT
+            </h3>
+            <p class="text-sm text-[#94a3b8] leading-relaxed mb-8">
+              レーベル所属アーティストへの出演依頼、楽曲制作、取材、業務提携に関するお問い合わせはこちら。
+            </p>
+          </div>
+          <a href="mailto:{{ .Site.Params.contact.email_address }}" class="inline-flex items-center justify-between px-6 py-4 bg-[#1a1c23] border border-[#333742] text-white font-mono text-sm hover:border-[#ccff00] hover:text-[#ccff00] transition-colors group">
+            <span>{{ .Site.Params.contact.email_address }}</span>
+            <span class="group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+        </div>
+
+        <div class="bg-[#16181f] border border-[#2d2f36] p-8 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-mono text-[#ccff00] uppercase tracking-widest mb-4">
+              {{ .Site.Params.contact.demo_title }}
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">
+              DEMO POLICY
+            </h3>
+            <p class="text-sm text-[#94a3b8] leading-relaxed mb-6">
+              {{ .Site.Params.contact.demo_note }}
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#2d2f36] font-mono text-xs text-[#64748b]">
+            STATUS: <span class="text-[#ccff00]">ACCEPTING DEMOS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===============================================================
+       5. FOOTER SECTION
+  ================================================================== -->
+  <footer class="bg-[#0a0b0d] text-[#64748b] py-12 border-b border-[#2d2f36]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-3">
+        <span class="w-3 h-3 bg-[#ccff00] rounded-none inline-block"></span>
+        <span class="text-lg font-black tracking-tighter text-white uppercase">{{ .Site.Title }}</span>
+        <span class="text-xs font-mono text-[#333742] hidden sm:inline">| {{ .Site.Params.footer.tagline }}</span>
+      </div>
+      <div class="font-mono text-xs text-center md:text-right">
+        {{ .Site.Params.footer.copyright }}
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ===============================================================
+       6. STICKY PLAYER BAR
   ================================================================== -->
   <div class="sticky bottom-0 z-50 w-full bg-[#16181f]/95 backdrop-blur-md border-t border-[#2d2f36] py-4 px-6 font-mono text-xs text-[#64748b] flex justify-between items-center">
     <div class="flex items-center gap-4 text-white">
@@ -171,3 +239,6 @@
   </div>
 
 </main>
+
+</body>
+</html>
