@@ -9,12 +9,9 @@
        1. HERO SECTION (ファーストビュー / ヒーロー)
   ================================================================== -->
   <section id="hero" class="relative min-h-screen flex flex-col justify-between overflow-hidden border-b border-[#2d2f36]">
-    
-    <!-- 背景ノイズ・グリッド加工 & グラデーション -->
     <div class="absolute inset-0 bg-[radial-gradient(#2c2d35_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#111215]/50 to-[#111215] pointer-events-none"></div>
 
-    <!-- ナビゲーションヘッダー -->
     <header class="relative z-10 max-w-7xl w-full mx-auto px-6 py-8 flex justify-between items-center border-b border-[#24262d]/80">
       <div class="text-2xl font-black tracking-tighter uppercase text-white flex items-center gap-3">
         <span class="w-3.5 h-3.5 bg-[#ccff00] rounded-none inline-block shadow-[0_0_12px_#ccff00]"></span>
@@ -28,26 +25,17 @@
       </nav>
     </header>
 
-    <!-- ヒーローメインコンテンツ -->
     <div class="relative z-10 max-w-7xl w-full mx-auto px-6 py-16 my-auto">
-      
-      <!-- バッジ -->
       <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#1a1c23] border border-[#333742] text-[#ccff00] font-mono text-xs uppercase tracking-widest mb-8">
         <span class="animate-pulse text-[#ccff00]">●</span> {{ .Site.Params.hero.badge }}
       </div>
-
-      <!-- キャッチコピー -->
       <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight leading-[0.9] mb-8 text-white">
         {{ .Site.Params.hero.title_line1 }} <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#cbd5e1] to-[#64748b]">{{ .Site.Params.hero.title_line1_highlight }}</span><br />
         {{ .Site.Params.hero.title_line2 }} <span class="text-[#ccff00] drop-shadow-[0_0_20px_rgba(204,255,0,0.35)]">{{ .Site.Params.hero.title_line2_highlight }}</span>
       </h1>
-
-      <!-- ステートメント -->
       <p class="max-w-2xl text-base sm:text-lg text-[#94a3b8] font-light leading-relaxed mb-10 border-l-2 border-[#ccff00] pl-4">
         {{ .Site.Params.hero.statement }}
       </p>
-
-      <!-- CTAアクションボタン -->
       <div class="flex flex-wrap gap-4 items-center font-mono text-sm uppercase tracking-wider">
         <a href="{{ .Site.Params.hero.btn_primary_link }}" class="px-8 py-4 bg-[#ccff00] text-black font-bold hover:bg-white transition-all duration-200 shadow-[0_0_25px_rgba(204,255,0,0.25)] flex items-center gap-3">
           <span>{{ .Site.Params.hero.btn_primary_text }}</span>
@@ -57,7 +45,129 @@
           {{ .Site.Params.hero.btn_secondary_text }}
         </a>
       </div>
+    </div>
+  </section>
+
+
+  <!-- ===============================================================
+       2. MANIFESTO SECTION (レーベルの思想・マニフェスト)
+  ================================================================== -->
+  <section id="manifesto" class="relative bg-[#0d0e11] text-[#e2e8f0] py-24 border-b border-[#2d2f36] overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-[#ccff00]/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="mb-16 border-l-4 border-[#ccff00] pl-6">
+        <div class="text-[#ccff00] font-mono text-xs uppercase tracking-widest mb-2">
+          ● {{ .Site.Params.manifesto.tag }}
+        </div>
+        <h2 class="text-4xl sm:text-6xl font-black uppercase tracking-tight text-white">
+          {{ .Site.Params.manifesto.title_prefix }} <span class="text-[#ccff00]">{{ .Site.Params.manifesto.title_main }}</span>
+        </h2>
+        <p class="text-lg text-[#94a3b8] font-light mt-3 max-w-xl">
+          {{ .Site.Params.manifesto.subtitle }}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {{ range .Site.Params.manifesto.pillars }}
+        <div class="bg-[#16181f] border border-[#2d2f36] p-8 relative group hover:border-[#ccff00] transition-all duration-300">
+          <div class="text-5xl font-mono font-black text-[#262933] group-hover:text-[#ccff00]/20 transition-colors mb-6">
+            {{ .number }}
+          </div>
+          <h3 class="text-xl font-bold uppercase text-white tracking-wider mb-4 border-b border-[#2d2f36] pb-3 group-hover:border-[#ccff00]/50 transition-colors">
+            {{ .title }}
+          </h3>
+          <p class="text-sm text-[#94a3b8] leading-relaxed">
+            {{ .description }}
+          </p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===============================================================
+       3. ROSTER SECTION (所属アーティスト一覧)
+  ================================================================== -->
+  <section id="roster" class="relative bg-[#111215] text-[#e2e8f0] py-24 border-b border-[#2d2f36]">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      
+      <!-- セクションヘッダー -->
+      <div class="mb-16 border-l-4 border-[#ccff00] pl-6">
+        <div class="text-[#ccff00] font-mono text-xs uppercase tracking-widest mb-2">
+          ● {{ .Site.Params.roster.tag }}
+        </div>
+        <h2 class="text-4xl sm:text-6xl font-black uppercase tracking-tight text-white">
+          {{ .Site.Params.roster.title_prefix }} <span class="text-[#ccff00]">{{ .Site.Params.roster.title_main }}</span>
+        </h2>
+        <p class="text-lg text-[#94a3b8] font-light mt-3 max-w-xl">
+          {{ .Site.Params.roster.subtitle }}
+        </p>
+      </div>
+
+      <!-- アーティストグリッド (2x2) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {{ range .Site.Params.roster.artists }}
+        <div class="bg-[#16181f] border border-[#2d2f36] p-8 relative group hover:border-[#ccff00] transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <!-- バッジ / ロール情報 -->
+            <div class="flex justify-between items-start mb-6 font-mono text-xs">
+              <span class="px-2 py-1 bg-[#222530] text-[#94a3b8] border border-[#333742] group-hover:border-[#ccff00]/40 group-hover:text-[#ccff00] transition-colors">
+                {{ .role }}
+              </span>
+              {{ if .is_new }}
+              <span class="px-2 py-1 bg-[#ccff00] text-black font-bold animate-pulse">
+                NEW SIGNING
+              </span>
+              {{ else if .is_founder }}
+              <span class="px-2 py-1 bg-[#ccff00]/10 text-[#ccff00] border border-[#ccff00]/30 font-bold">
+                LEADER
+              </span>
+              {{ end }}
+            </div>
+
+            <!-- アーティスト名 -->
+            <h3 class="text-3xl font-black uppercase text-white tracking-wider mb-1 group-hover:text-[#ccff00] transition-colors">
+              {{ .name }}
+            </h3>
+            {{ if .full_name }}
+            <div class="text-xs font-mono text-[#64748b] tracking-widest uppercase mb-4">
+              ({{ .full_name }})
+            </div>
+            {{ else }}
+            <div class="mb-4"></div>
+            {{ end }}
+
+            <!-- Bio -->
+            <p class="text-sm text-[#94a3b8] leading-relaxed mb-6">
+              {{ .bio }}
+            </p>
+          </div>
+
+          <!-- アクションリンク -->
+          <div class="pt-4 border-t border-[#24262d] flex justify-between items-center text-xs font-mono">
+            <span class="text-[#64748b] group-hover:text-white transition-colors">DISCOGRAPHY & PROFILE</span>
+            <span class="text-[#ccff00] group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </div>
+        {{ end }}
+      </div>
 
     </div>
-
   </section>
+
+
+  <!-- ===============================================================
+       4. STICKY PLAYER BAR (画面下部常駐 プレイヤーバー)
+  ================================================================== -->
+  <div class="sticky bottom-0 z-50 w-full bg-[#16181f]/95 backdrop-blur-md border-t border-[#2d2f36] py-4 px-6 font-mono text-xs text-[#64748b] flex justify-between items-center">
+    <div class="flex items-center gap-4 text-white">
+      <span class="px-2 py-0.5 bg-[#ccff00]/10 text-[#ccff00] border border-[#ccff00]/30 text-[10px] font-bold">{{ .Site.Params.now_drop.tag }}</span>
+      <span class="font-bold tracking-wider text-sm text-white/90">{{ .Site.Params.now_drop.track_title }}</span>
+    </div>
+    <div class="hidden sm:flex items-center gap-6 text-[#94a3b8]">
+      <span class="text-[#ccff00]">● {{ .Site.Params.now_drop.status }}</span>
+    </div>
+  </div>
+
+</main>
