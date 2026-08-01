@@ -147,12 +147,13 @@
   </section>
 
 
-  <!-- ===============================================================
+ <!-- ===============================================================
        3. ROSTER SECTION
   ================================================================== -->
   <section id="roster" class="relative bg-[#111215] text-[#e2e8f0] py-24 border-b border-[#2d2f36]">
     <div class="max-w-7xl mx-auto px-6 relative z-10">
       
+      <!-- セクションヘッダー -->
       <div class="group cursor-pointer mb-16 border-l-4 border-[#ccff00] pl-6">
         <div class="text-[#ccff00] font-mono text-xs uppercase tracking-widest mb-2 flex items-center gap-2">
           <span>● {{ .Site.Params.roster.tag_en }}</span>
@@ -172,6 +173,56 @@
         </p>
       </div>
 
+      <!-- アーティスト一覧グリッド -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {{ range .Site.Params.roster.artists }}
+        <div class="bg-[#16181f] border border-[#2d2f36] p-8 relative group hover:border-[#ccff00] transition-all duration-300 flex flex-col justify-between cursor-pointer">
+          <div>
+            <div class="flex justify-between items-start mb-6 font-mono text-xs">
+              <span class="px-2 py-1 bg-[#222530] text-[#94a3b8] border border-[#333742] group-hover:border-[#ccff00]/40 group-hover:text-[#ccff00] transition-colors">
+                {{ .role }}
+              </span>
+              {{ if .is_new }}
+              <span class="px-2 py-1 bg-[#ccff00] text-black font-bold animate-pulse">
+                NEW SIGNING
+              </span>
+              {{ else if .is_founder }}
+              <span class="px-2 py-1 bg-[#ccff00]/10 text-[#ccff00] border border-[#ccff00]/30 font-bold">
+                LEADER
+              </span>
+              {{ end }}
+            </div>
+            
+            <h3 class="text-3xl font-black uppercase text-white tracking-wider mb-1 group-hover:text-[#ccff00] transition-colors">
+              {{ .name }}
+            </h3>
+            {{ if .full_name }}
+            <div class="text-xs font-mono text-[#64748b] tracking-widest uppercase mb-4">
+              ({{ .full_name }})
+            </div>
+            {{ else }}
+            <div class="mb-4"></div>
+            {{ end }}
+
+            <p class="text-sm text-[#94a3b8] leading-relaxed">
+              {{ .bio_en }}
+            </p>
+            <p class="text-xs text-[#ccff00] leading-relaxed mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+              {{ .bio_ja }}
+            </p>
+          </div>
+
+          <div class="pt-6 border-t border-[#24262d] flex justify-between items-center text-xs font-mono mt-6">
+            <span class="text-[#64748b] group-hover:text-white transition-colors">DISCOGRAPHY & PROFILE</span>
+            <span class="text-[#ccff00] group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </section>
+  
       <!-- Artists Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {{ range .Site.Params.roster.artists }}
