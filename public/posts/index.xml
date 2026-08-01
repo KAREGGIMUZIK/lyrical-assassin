@@ -1,24 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Posts on My New Hugo Project</title>
-		<link>http://localhost:1313/posts/</link>
-		<description>Recent content in Posts on My New Hugo Project</description>
-		<generator>Hugo</generator>
-		<language>en-us</language>
-		
-		
-		
-		
-			<lastBuildDate>Mon, 27 Jul 2026 13:40:26 +0900</lastBuildDate>
-		
-			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>01 Reboot</title>
-				<link>http://localhost:1313/posts/01-reboot/</link>
-				<pubDate>Mon, 27 Jul 2026 13:40:26 +0900</pubDate>
-				<guid>http://localhost:1313/posts/01-reboot/</guid>
-				<description></description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on My New Hugo Project</title><link>https://example.org/posts/</link><description>Recent content in Posts on My New Hugo Project</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 27 Jul 2026 11:00:00 +0900</lastBuildDate><atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>LYRICAL ASSASSIN: REBOOT</title><link>https://example.org/posts/01-reboot/</link><pubDate>Mon, 27 Jul 2026 11:00:00 +0900</pubDate><guid>https://example.org/posts/01-reboot/</guid><description>&lt;h1 id="二元論を超え探求者らを研ぎ澄ます"&gt;二元論を超え、探求者らを研ぎ澄ます&lt;/h1&gt;
+&lt;p&gt;10年の沈黙を経て、「LYRICAL ASSASSIN」はここに再起動する。
+ノイズは単なる幻想であり、言葉（言霊）こそが真実だ。&lt;/p&gt;
+&lt;p&gt;（ここにストリートナレッジやリリック理論を自由に記述）&lt;/p&gt;</description></item></channel></rss>
