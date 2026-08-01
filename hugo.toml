@@ -1,4 +1,50 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
-theme = "ananke"
+baseURL = 'https://lyrical-assassin.pages.dev/'
+languageCode = 'ja-jp'
+title = 'LYRICAL ASSASSIN'
+
+# -----------------------------------------------------------------
+# レーベル独自パラメータ（[params]）
+# -----------------------------------------------------------------
+[params.hero]
+  badge = "RAW RHYMES × SOCIAL CRITIQUE"
+  title_line1 = "POETRY AS A"
+  title_line1_highlight = "WEAPON."
+  title_line2 = "SATIRE AS A"
+  title_line2_highlight = "BLADE."
+  
+  statement = "Wu-Tangの血脈を継ぐ重厚な詩情と、社会の構造欠陥を穿つ鋭利な風刺。ストリートの美学とMafioso的審美眼が交差する、言葉の刺客たちの真の集積地。"
+  
+  btn_primary_text = "LATEST DROPS"
+  btn_primary_link = "#releases"
+  btn_secondary_text = "READ MANIFESTO"
+  btn_secondary_link = "#manifesto"
+
+[params.now_drop]
+  tag = "NOW DROP"
+  track_title = 'LYRICAL ASSASSIN - "REALITY SATIRE" (RAW CUT)'
+  status = "STREAMING ON ALL PLATFORMS"
+
+  # -----------------------------------------------------------------
+# マニフェストセクション ([params.manifesto])
+# -----------------------------------------------------------------
+[params.manifesto]
+  tag = "OUR PHILOSOPHY"
+  title_prefix = "THE"
+  title_main = "MANIFESTO"
+  subtitle = "言葉は飾りではない。社会の構造欠陥を突く鋭利な刃だ。"
+  
+  # 3つの核（Pillars）
+  [[params.manifesto.pillars]]
+    number = "01"
+    title = "MAFIOSO POETRY"
+    description = "Wu-Tang Clanの血脈を継ぐ美学。重厚なビートの上に、緊張感と深み溢れる詩情を刻み込む。"
+
+  [[params.manifesto.pillars]]
+    number = "02"
+    title = "SOCIAL SATIRE"
+    description = "単なる自己主張に留まらない。歪んだ社会構造、メディアの欺瞞、現代の病理を言葉で切り裂く骨太な風刺。"
+
+  [[params.manifesto.pillars]]
+    number = "03"
+    title = "LYRICAL ASSASSIN"
+    description = "表層的なトレンドを切り捨て、鋭利なリリックだけで思考を穿つ。言葉の暗殺者としての絶対的な美学。"
