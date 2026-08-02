@@ -114,8 +114,9 @@ title_main_ja = "同じ志を持つブラザー達へ"
 subtitle_en = "For demo submissions, bookings, press inquiries, and strategic collaborations."
 subtitle_ja = "デモトラックの送付、ブッキング、メディア取材、コラボレーションの打診はこちらから。"
 demo_title = "DEMO SUBMISSION POLICY"
-demo_note_en = "* Streaming links only (SoundCloud / Dropbox). Direct file attachments will be purged."
-demo_note_ja = "※ストリーミングリンク（SoundCloud/Dropbox等）を本文に記載のこと。直接添付は自動破棄。"
+demo_note_en = "-Streaming links only- Please include streaming links (SoundCloud, Dropbox, etc.) in the message body.
+Direct audio attachments will be automatically discarded for security reasons."
+demo_note_ja = "※ストリーミングリンク（SoundCloud/Dropbox等）を本文に記載願います。音源の直接添付はセキュリティ上の観念から自動破棄致します。"
 email_label = "OFFICIAL INQUIRY"
 email_address = "contact@lyrical-assassin.com"
 
