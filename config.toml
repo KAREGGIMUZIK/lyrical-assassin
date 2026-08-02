@@ -32,7 +32,7 @@ status_ja = "全プラットフォームで配信中"
 # -----------------------------------------------------------------
 [params.manifesto]
 tag_en = "OUR PHILOSOPHY"
-tag_ja = "我らの核心思想"
+tag_ja = "我らの核心的思想"
 title_main_en = "THE MANIFESTO"
 title_main_ja = "声明 / マニフェスト"
 subtitle_en = "Words are not ornaments. They are sharp blades piercing structural flaws."
@@ -47,17 +47,17 @@ desc_ja = "90年代HIPHOPの血脈とそのストリートの知恵が放つ美�
 
 [[params.manifesto.pillars]]
 number = "02"
-title_en = "SOCIAL SATIRE"
-title_ja = "鋭利な社会風刺"
-desc_en = "Beyond self-expression. Slicing through societal defects, media deceptions, and modern pathology."
-desc_ja = "単なる自己主張に留まらない。歪んだ社会構造、メディアの欺瞞、現代の病理を言葉で切り裂く。"
+title_en = "SHARP SATIRE AND REAL CHANGE"
+title_ja = "鋭利な社会風刺と変える力"
+desc_en = "This philosophy goes far beyond self‑expression. It slices through twisted social systems, media‑built illusions, and the everyday pathologies people carry — using words like a blade sharpened by the streets. Instead of falling into bias or extreme takes, it pushes toward a third way, a synthesis that keeps things grounded, balanced, and true."
+desc_ja = "単なる自己主張に留まらず、歪んだ社会構造、メディアの欺瞞、人々の社会病理を言葉で切り裂く事で、極論に偏らず、第三の答えであるのジンテーゼを提唱する。"
 
 [[params.manifesto.pillars]]
 number = "03"
 title_en = "LYRICAL ASSASSIN"
 title_ja = "リリックの刺客"
-desc_en = "Stripping away shallow trends. Piercing thoughts with lethal rhymes and uncompromising vision."
-desc_ja = "表層的なトレンドを切り捨て、鋭利なリリックだけで思考を穿つ言葉の暗殺者。"
+desc_en = "Surface trends get cut away — wordplay stays for the freestyle. Its lyric philosophy moves like a Japanese sword, an assassin shaping stories with precision."
+desc_ja = "表層的なトレンド排除や言葉遊びはフリースタイルで。リリシズムの哲学はストーリーを奏でる暗殺者。"
 
 # -----------------------------------------------------------------
 # 3. ROSTER SECTION
